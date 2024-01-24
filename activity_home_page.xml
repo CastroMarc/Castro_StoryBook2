@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:weightSum="5"
+    android:background="@drawable/homepage"
+    tools:context=".homePage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="234dp"
+            android:layout_height="67dp"
+            android:layout_marginTop="45dp"
+            android:gravity="center"
+            android:text="House Hopping with"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="261dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Title"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="118dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginRight="180dp"
+            android:backgroundTint="#EC731F"
+            android:text="Back"
+            android:textColor="@color/white"
+            android:onClick="goToMain"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="118dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginLeft="180dp"
+            android:backgroundTint="#EC731F"
+            android:text="Next"
+            android:textColor="@color/white"
+            android:onClick="goToPage1"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</LinearLayout>
