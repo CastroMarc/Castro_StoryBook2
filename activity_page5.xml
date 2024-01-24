@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:weightSum="5"
+    android:background="@drawable/page5"
+    tools:context=".page5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="183dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            android:text="I don't think I belong to the trees"
+            android:textColor="#1D3368"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/pageFive"
+            android:layout_width="183dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="200dp"
+            android:text="pageFive"
+            android:textColor="#1D3368"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="118dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="180dp"
+            android:backgroundTint="#EC731F"
+            android:text="Back"
+            android:textColor="@color/white"
+            android:onClick="goToPage4"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="118dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="180dp"
+            android:backgroundTint="#EC731F"
+            android:text="Next"
+            android:textColor="@color/white"
+            android:onClick="goToPage6"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</LinearLayout>
